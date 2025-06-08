@@ -14,12 +14,16 @@ window.onload = () => {
 
     if (emailtext == "" || emailtext.trim() == "") {
       alert("Please enter the message you wish to send.");
+      return;
     } else if (namevalue == "" || namevalue.trim() == "") {
       alert("Please enter your name");
+      return;
     } else if (emailvalue == "" || emailvalue.trim() == "") {
       alert("Please enter email.");
+      return;
     } else if (!emailvalue.includes("@")) {
       alert("Please enter valid email.");
+      return;
     }
     sendBtn.setAttribute("value", "Sending...");
 
